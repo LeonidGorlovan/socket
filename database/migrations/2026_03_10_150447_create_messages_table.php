@@ -12,7 +12,6 @@ return new class extends Migration
             $table->id();
             $table->foreignId('sender_id')->constrained('users')->cascadeOnDelete();
             $table->foreignId('recipient_id')->constrained('users')->cascadeOnDelete();
-
             $table->text('content');
             $table->timestamps();
             $table->softDeletes();
