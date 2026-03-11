@@ -1,4 +1,12 @@
-<div class="relative flex flex-col rounded-xl h-[calc(100vh-4rem)]">
+<div class="relative flex flex-col rounded-xl h-[calc(100vh-4rem)]"
+     x-data
+     x-init="
+        const userId = @js(auth()->id());
+        if (typeof window.Echo !== 'undefined' && userId) {
+            window.Echo.private('App.Models.User.' + userId)
+                .listen('MessageSent', () => { $wire.$refresh(); });
+        }
+     ">
     <div class="relative flex-1 min-h-0 flex flex-col rounded-xl border border-neutral-200 dark:border-neutral-700 overflow-hidden mb-4">
         <div class="absolute inset-0 -z-10 rounded-xl opacity-[0.06]" style="background-image: url('{{ asset('images/chat-bg.jpg') }}');" aria-hidden="true"></div>
         <div class="flex-1 min-h-0 overflow-y-auto p-4">
@@ -18,7 +26,10 @@
         </div>
     </div>
 
-    <div class="rounded-xl border mb-4">
+    <div class="rounded-xl border mb-4"
+         x-data
+         @keydown.enter.ctrl.prevent="$wire.sendMessage()"
+         @keydown.enter.meta.prevent="$wire.sendMessage()">
         <flux:textarea wire:model="content" class="w-full" rows="2" placeholder="{{ __('Type a message...') }}" />
     </div>
 

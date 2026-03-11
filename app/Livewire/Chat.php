@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Events\MessageSent;
 use App\Models\Message;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Collection;
@@ -25,11 +26,13 @@ class Chat extends Component
         $this->validate();
         $validated = $this->only('content');
 
-        Message::query()->create([
+        $message = Message::query()->create([
             'sender_id' => auth()->id(),
             'recipient_id' => $this->recipientId,
             'content' => trim($validated['content']),
         ]);
+
+        MessageSent::dispatch($message);
 
         $this->reset('content');
     }
