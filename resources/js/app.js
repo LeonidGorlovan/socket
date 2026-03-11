@@ -5,3 +5,6 @@
  */
 
 import './echo';
+import { initChatNotifications } from './chat-notifications';
+
+window.initChatNotifications = initChatNotifications;

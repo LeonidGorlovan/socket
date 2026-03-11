@@ -84,6 +84,42 @@
 
         {{ $slot }}
 
+        <!-- Chat message toasts (only when authenticated) -->
+        @auth
+        <div
+            x-data="{
+                toasts: [],
+                addToast(detail) {
+                    const id = Date.now();
+                    this.toasts.push({ id, ...detail });
+                    setTimeout(() => {
+                        this.toasts = this.toasts.filter(t => t.id !== id);
+                    }, 5000);
+                }
+            }"
+            @show-chat-toast.window="addToast($event.detail)"
+            class="fixed top-4 right-4 z-[100] flex flex-col gap-2 max-w-sm pointer-events-none"
+            aria-live="polite"
+        >
+            <template x-for="toast in toasts" :key="toast.id">
+                <a
+                    :href="'/chat/recipient/' + toast.senderId"
+                    wire:navigate
+                    class="pointer-events-auto flex flex-col gap-0.5 rounded-xl border border-zinc-200 dark:border-zinc-600 bg-white dark:bg-zinc-800 shadow-lg p-3 hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-colors"
+                >
+                    <span class="text-sm font-medium text-zinc-900 dark:text-zinc-100" x-text="toast.senderName"></span>
+                    <p class="text-sm text-zinc-600 dark:text-zinc-400 line-clamp-2" x-text="toast.content"></p>
+                </a>
+            </template>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var userId = @json(auth()->id());
+                if (userId && window.initChatNotifications) window.initChatNotifications(userId);
+            });
+        </script>
+        @endauth
+
         @fluxScripts
     </body>
 </html>
