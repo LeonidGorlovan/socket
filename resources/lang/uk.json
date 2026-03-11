@@ -4,7 +4,6 @@
   "Enter your email and password below to log in": "Введіть нижче свою електронну пошту та пароль, щоб увійти",
   "Email address": "Електронна адреса",
   "Email": "Електронна пошта",
-  "Password": "Пароль",
   "Forgot your password?": "Забули пароль?",
   "Remember me": "Запам’ятати мене",
   "Don't have an account?": "Немає облікового запису?",
@@ -68,7 +67,6 @@
   "Documentation": "Документація",
   "Manage your profile and account settings": "Керуйте налаштуваннями профілю та облікового запису",
 
-  "Password settings": "Налаштування пароля",
   "Update password": "Оновити пароль",
   "Ensure your account is using a long, random password to stay secure": "Переконайтеся, що ваш обліковий запис використовує довгий випадковий пароль для безпеки",
   "Current password": "Поточний пароль",
