@@ -3,7 +3,7 @@
         {{ __('Dashboard') }}
     </flux:sidebar.item>
 
-    <flux:sidebar.group icon="chat-bubble-bottom-center-text" expandable :heading="__('Chat room with:')" class="grid">
+    <flux:sidebar.group icon="chat-bubble-bottom-center-text" expandable :heading="__('Chat with:')" class="grid">
         @if(!empty($users) && count($users))
             @foreach($users as $user)
                 <flux:sidebar.item :href="route('chat.recipient', ['id' => $user->id])" :current="request()->routeIs('chat.recipient') && (int) request()->route('id') === (int) $user->id" wire:navigate>
