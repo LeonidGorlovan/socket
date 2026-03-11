@@ -14,7 +14,7 @@
                 <div wire:key="message-{{ $message->id }}" class="mb-4">
                     <div class="max-w-[30%] rounded-2xl px-4 py-2 bg-neutral-200 dark:bg-neutral-600">
                         <p class="text-sm">
-                            <span class="text-gray-500">{{ $message->sender_id === auth()->id() ? 'Me' : $message->sender->name }}:</span>
+                            <span class="text-gray-500">{{ $message->sender_id === auth()->id() ? __('Me') : $message->sender->name }}:</span>
                             {{ $message->content }}
                         </p>
                         <p class="text-xs text-gray-400">{{ $message->created_at->toDayDateTimeString() }}</p>

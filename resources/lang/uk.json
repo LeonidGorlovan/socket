@@ -1,0 +1,129 @@
+{
+  "Log in": "Увійти",
+  "Log in to your account": "Увійдіть у свій обліковий запис",
+  "Enter your email and password below to log in": "Введіть нижче свою електронну пошту та пароль, щоб увійти",
+  "Email address": "Електронна адреса",
+  "Email": "Електронна пошта",
+  "Password": "Пароль",
+  "Forgot your password?": "Забули пароль?",
+  "Remember me": "Запам’ятати мене",
+  "Don't have an account?": "Немає облікового запису?",
+  "Sign up": "Зареєструватися",
+
+  "Confirm password": "Підтвердження пароля",
+  "This is a secure area of the application. Please confirm your password before continuing.": "Це безпечна частина застосунку. Будь ласка, підтвердіть свій пароль, перш ніж продовжити.",
+  "Confirm": "Підтвердити",
+
+  "Reset password": "Скидання пароля",
+  "Please enter your new password below": "Будь ласка, введіть новий пароль нижче",
+
+  "Profile settings": "Налаштування профілю",
+  "Profile": "Профіль",
+  "Update your name and email address": "Оновіть своє ім’я та електронну адресу",
+  "Name": "Ім’я",
+  "Your email address is unverified.": "Ваша електронна адреса не підтверджена.",
+  "Click here to re-send the verification email.": "Натисніть тут, щоб повторно надіслати лист для підтвердження.",
+  "A new verification link has been sent to your email address.": "Нове посилання для підтвердження надіслано на вашу електронну адресу.",
+  "Save": "Зберегти",
+  "Saved.": "Збережено.",
+
+  "Register": "Реєстрація",
+  "Create an account": "Створити обліковий запис",
+  "Enter your details below to create your account": "Введіть свої дані нижче, щоб створити обліковий запис",
+  "Full name": "Повне ім’я",
+  "Create account": "Створити обліковий запис",
+  "Already have an account?": "Вже маєте обліковий запис?",
+
+  "Welcome": "Ласкаво просимо",
+
+  "Email verification": "Підтвердження електронної пошти",
+  "Please verify your email address by clicking on the link we just emailed to you.": "Будь ласка, підтвердіть свою електронну адресу, натиснувши на посилання, яке ми щойно надіслали вам електронною поштою.",
+  "A new verification link has been sent to the email address you provided during registration.": "Нове посилання для підтвердження надіслано на адресу електронної пошти, яку ви вказали під час реєстрації.",
+  "Resend verification email": "Надіслати лист для підтвердження ще раз",
+  "Log out": "Вийти",
+
+  "Forgot password": "Забули пароль",
+  "Enter your email to receive a password reset link": "Введіть свою електронну пошту, щоб отримати посилання для скидання пароля",
+  "Email password reset link": "Надіслати посилання для скидання пароля",
+  "Or, return to": "Або поверніться до",
+  "log in": "входу",
+
+  "Delete account": "Видалити обліковий запис",
+  "Delete your account and all of its resources": "Видалити ваш обліковий запис та всі пов’язані з ним дані",
+  "Are you sure you want to delete your account?": "Ви впевнені, що хочете видалити свій обліковий запис?",
+  "Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.": "Після видалення вашого облікового запису всі пов’язані з ним ресурси та дані будуть безповоротно видалені. Будь ласка, введіть свій пароль, щоб підтвердити, що ви дійсно хочете остаточно видалити обліковий запис.",
+  "Cancel": "Скасувати",
+
+  "Dashboard": "Панель керування",
+
+  "Settings": "Налаштування",
+  "Appearance settings": "Налаштування вигляду",
+  "Appearance": "Вигляд",
+  "Update the appearance settings for your account": "Оновіть налаштування вигляду для вашого облікового запису",
+  "Light": "Світла",
+  "Dark": "Темна",
+  "System": "Системна",
+
+  "Repository": "Репозиторій",
+  "Documentation": "Документація",
+  "Manage your profile and account settings": "Керуйте налаштуваннями профілю та облікового запису",
+
+  "Password settings": "Налаштування пароля",
+  "Update password": "Оновити пароль",
+  "Ensure your account is using a long, random password to stay secure": "Переконайтеся, що ваш обліковий запис використовує довгий випадковий пароль для безпеки",
+  "Current password": "Поточний пароль",
+  "New password": "Новий пароль",
+
+  "Two-factor authentication settings": "Налаштування двофакторної автентифікації",
+  "Two-factor authentication": "Двофакторна автентифікація",
+  "Two-factor auth": "Двофакторна автентифікація",
+  "Manage your two-factor authentication settings": "Керуйте налаштуваннями двофакторної автентифікації",
+  "Enabled": "Увімкнено",
+  "With two-factor authentication enabled, you will be prompted for a secure, random pin during login, which you can retrieve from the TOTP-supported application on your phone.": "Коли двофакторну автентифікацію увімкнено, під час входу вам потрібно буде ввести захищений випадковий PIN‑код, який можна отримати в застосунку‑аутентифікаторі на вашому телефоні.",
+  "Disable 2FA": "Вимкнути 2FA",
+  "Disabled": "Вимкнено",
+  "When you enable two-factor authentication, you will be prompted for a secure pin during login. This pin can be retrieved from a TOTP-supported application on your phone.": "Коли ви вмикаєте двофакторну автентифікацію, під час входу вас попросять ввести захищений PIN‑код. Цей код можна отримати в застосунку‑аутентифікаторі на вашому телефоні.",
+  "Enable 2FA": "Увімкнути 2FA",
+  "Back": "Назад",
+  "or, enter the code manually": "або введіть код вручну",
+
+  "No messages": "Немає повідомлень",
+  "Type a message...": "Введіть повідомлення...",
+  "Send": "Надіслати",
+
+  "Password": "Пароль",
+  "Password settings": "Налаштування пароля",
+
+  "Chat with:": "Чат з:",
+
+  "Authentication code": "Код автентифікації",
+  "Enter the authentication code provided by your authenticator application.": "Введіть код автентифікації, наданий вашим застосунком‑аутентифікатором.",
+  "Recovery code": "Код відновлення",
+  "Please confirm access to your account by entering one of your emergency recovery codes.": "Будь ласка, підтвердьте доступ до свого облікового запису, ввівши один із аварійних кодів відновлення.",
+  "Continue": "Продовжити",
+  "or you can": "або ви можете",
+  "login using a recovery code": "увійти, використовуючи код відновлення",
+  "login using an authentication code": "увійти, використовуючи код автентифікації",
+
+  "2FA recovery codes": "Коди відновлення 2FA",
+  "Recovery codes let you regain access if you lose your 2FA device. Store them in a secure password manager.": "Коди відновлення дозволяють відновити доступ, якщо ви втратите пристрій з 2FA. Зберігайте їх у захищеному менеджері паролів.",
+  "View recovery codes": "Показати коди відновлення",
+  "Hide recovery codes": "Приховати коди відновлення",
+  "Regenerate codes": "Згенерувати коди ще раз",
+  "Recovery codes": "Коди відновлення",
+  "Each recovery code can be used once to access your account and will be removed after use. If you need more, click Regenerate codes above.": "Кожен код відновлення можна використати лише один раз для доступу до облікового запису, після чого він буде видалений. Якщо вам потрібно більше кодів, натисніть «Згенерувати коди ще раз» вище.",
+
+  "Two-factor authentication enabled": "Двофакторну автентифікацію увімкнено",
+  "Two-factor authentication is now enabled. Scan the QR code or enter the setup key in your authenticator app.": "Двофакторну автентифікацію увімкнено. Відскануйте QR‑код або введіть ключ налаштування у свій застосунок‑аутентифікатор.",
+  "Close": "Закрити",
+  "Verify authentication code": "Підтвердіть код автентифікації",
+  "Enter the 6-digit code from your authenticator app.": "Введіть 6‑значний код із вашого застосунку‑аутентифікатора.",
+  "Enable two-factor authentication": "Увімкнути двофакторну автентифікацію",
+  "To finish enabling two-factor authentication, scan the QR code or enter the setup key in your authenticator app.": "Щоб завершити ввімкнення двофакторної автентифікації, відскануйте QR‑код або введіть ключ налаштування у своєму застосунку‑аутентифікаторі.",
+
+  "Search": "Пошук",
+  "Platform": "Платформа",
+
+  "Me": "Я"
+}
+
